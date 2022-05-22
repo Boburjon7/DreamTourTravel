@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.animeX {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.animeX.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.animeTour,
+.animeClient {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.animeTour.active,
+.animeClient.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.animeTourLeft,
+.animeClientleft {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.animeTourLeft.active,
+.animeClientleft.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+body {
+  color: black;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightblue;
+}
+
+header img {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.header_top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 80%;
+  width: 100%;
+}
+
+.span_logo {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: normal;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+
+.select{
+  outline: none;
+  background-color: rgb(2, 36, 2);
+  color: white;
+}
+
+.header_nav {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header_nav i {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 1px;
+}
+
+.header_ul {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+
+.fa-times,
+.fa-bars {
+  display: none;
+}
+
+.header_ul_a {
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+  transition: 0.5ms;
+  font-weight: normal;
+}
+
+.header_ul_a:hover {
+  color: cyan;
+}
+
+.header_text {
+  width: 100%;
+}
+
+select {
+  border-radius: 10px;
+}
+
+.header_text h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+}
+
+.header_text p {
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+  font-weight: normal;
+}
+
+/* Tour */
+
+.tour_item img {
+  max-width: 500px;
+  width: 100%;
+  max-height: 332px;
+  height: 100%;
+}
+
+.tour_item .item_img{
+  max-height: 332px;
+}
+
+.tour_text {
+  padding: 150px 0 50px 0;
+}
+
+.tour_text h1 {
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  font-weight: bold;
+}
+
+.tour_text p {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 30px 0;
+  color: #000000;
+  font-weight: normal;
+}
+
+.tour_card h2 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.tour_card p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.tour_card a {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: normal;
+}
+
+/* hotel */
+
+.section_hotel {
+  padding: 150px 0 50px 0;
+}
+
+.section_hotel .section_h {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.hotel_text {
+  min-height: 300px;
+  height: 100%;
+}
+
+.hotel_card img {
+  max-width: 490px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 300px;
+  height: 100%;
+}
+
+.hotel_h h1 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.hotel_star .fa-star {
+  color: gold;
+}
+
+.hotel_location i {
+  font-size: 24px;
+}
+
+.hotel_location h2 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.hotel_text p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.hotel_text a {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.section_client {
+  padding: 150px 0 50px 0;
+}
+
+.section_client h1 {
+  padding-bottom: 50px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.client_card p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.client_card a {
+  color: black;
+  font-weight: normal;
+}
+
+.client_card img{
+  height: 100%;
+  width: 100%;
+}
+
+.client_card3 img{
+  min-height: 320px;
+  height: 100%;
+  width: 100%;
+}
+
+.client_img{
+  max-height: 320px;
+  overflow: hidden;
+  max-width: 320px;
+  border-radius: 50%;
+}
+
+.section_place {
+  padding: 150px 0 50px 0;
+  text-transform: capitalize;
+}
+
+.section_place .place_h {
+  padding-bottom: 50px;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  font-weight: bold;
+}
+
+.place_card img {
+  max-width: 460px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 350px;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.place_card h1 {
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  font-weight: bold;
+}
+
+.section_about {
+  padding: 150px 0;
+}
+
+.about_text {
+  height: 350px;
+}
+
+.about_text h1 {
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  font-weight: bold;
+}
+
+.about_text p {
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  font-weight: normal;
+}
+
+.main_map{
+  padding: 0 0 100px 0;
+  text-transform: capitalize;
+}
+
+.only_h{
+  margin: 100px 0;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.section_form {
+  background: url("../images/footer.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.form_info {
+  position: absolute;
+  top: 50px;
+  max-width: 500px;
+  width: 100%;
+  min-height: 450px;
+  padding: 20px 40px;
+  background: white;
+  border-radius: 30px;
+}
+
+.form_info h3 {
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form_info .info_form {
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+}
+
+.phone_info {
+  font-size: 22px;
+  line-height: 26px;
+  color: #363636;
+  font-weight: normal;
+}
+
+.phone_info a {
+  color: blue;
+}
+
+.footer{
+  background-color: #02091a;
+  padding: 50px 0;
+  color: white;
+}
+
+.social-links{
+  width: 100%;
+}
+
+.social-links i{
+  font-size: 25px;
+}
